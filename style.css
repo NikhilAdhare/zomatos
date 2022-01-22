@@ -1,0 +1,357 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+.head{
+    background-image: url("banner.png");
+    background-size: 100% 100%;
+    width: 100%;
+    height: 460px;
+}
+.menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.menu .left{
+    margin-left: 200px;
+}
+.menu .left ul li a{
+    color: #fff;
+    font-size: 1rem;
+    text-decoration: none;
+}
+.menu .left ul li a i{
+    padding: 0.5rem;
+}
+.menu .right{
+    margin-right: 200px;
+}
+.menu .right ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.menu .right ul li{
+    margin: 20px;
+}
+.menu .right ul li a{
+    color: #fff;
+    font-size: 1.3rem;
+    text-decoration: none;
+}
+.search{
+   position: absolute;
+   top: 25%;
+   left: 50%;
+   transform: translate(-50%,-25%);
+}
+.search h1{
+    color:rgb(252, 241, 241);
+     font-size: 6rem;
+     letter-spacing: -7px;
+     text-align: center;
+}
+.search h3{
+    color:rgb(228, 224, 224);
+     text-align: center;
+     font-size: 2.2rem;
+     letter-spacing: 1px;
+     font-weight: 400;
+}
+.find{
+    text-align: center;
+}
+.find .t1{
+    position: relative;
+    padding: 1rem;
+    border: 0;
+    outline: none;
+    border-radius: 5px;
+}
+.find .t2{
+    position: relative;
+    padding: 1rem;
+    border: 0;
+    outline: none;
+    border-radius: 5px;
+    width: 400px;
+    font-size: 1rem;
+    margin-top: 20px;
+}
+.find .fa-search{
+    position: relative;
+    border: 0;
+    outline: none;
+    border-radius: 5px;
+    padding: 1.22rem 2rem;
+    background-color: greenyellow;
+    color: #fff;
+    z-index: 1;
+    cursor: pointer;
+    transition:  0.5s;
+}
+.find .fa-search:hover{
+    background-color: #fff;
+    color: greenyellow;
+}
+.food{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 2rem 15rem;
+}
+.food .box{
+    width: 250px;
+    height: 200px;
+    border: 0;
+    outline: none;
+    transition: all 0.5s;
+}
+.food .box .imf{
+    text-align: center;
+}
+.food .box .imf h2{
+    color: #555;
+    font-weight: 500;
+}
+.food .box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.food .box:hover{
+    transform: scale(1.07);
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+}
+.location{
+    margin-top: 20px;
+    padding: 2rem 15rem;
+}
+.location h1{
+    font-size: 3rem;
+    font-weight: 400;
+    letter-spacing: -1px;
+    color: #555;
+}
+.location .imf2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.location .imf2 p{
+    color: #555;
+    font-size: 1.2rem;
+    font-weight: 200;
+}
+.location .imf2 a{
+    color: rgb(247, 72, 72);
+    font-size: 1.2rem;
+    font-weight: 200;
+    text-decoration: none;
+}
+.location .imf2 a i{
+    padding: 5px;
+    font-size: 1,2rem;
+}
+.place{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 25px;
+}
+.place .card{
+    width: 250px;
+    height: 300px;
+    outline: none;
+    transition: all 0.5s;
+}
+.place .card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.place .card a{
+    text-decoration: none;
+}
+.popular{
+    padding: 2rem 15rem;
+}
+.popular h1{
+    text-align: center;
+    margin-top: 150px;
+    font-weight: 200;
+    color: #555;
+}
+.popular h1 span{
+    color: black;
+}
+.place-name{
+    display: grid;
+    grid-template-rows:  repeat(10,1fr);
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 20px;
+    text-align: center;
+}
+.place-name .name{
+    margin-top:50px ;
+    width: 300px;
+    height: 50px;
+    border: 0;
+    outline: none;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+     display: flex;
+     align-items: center;
+     justify-content: space-around;
+     padding: 1.5rem;
+     transition:  all 0.5s;
+}
+.place-name .name:hover{
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.2); 
+}
+.place-name .name h2{
+    font-weight: 300;
+    color: #555;
+}
+.place-name .name i{
+    color: #555;
+    cursor: pointer;
+}
+.login-page{
+    padding: 4rem 20rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.login-page .mobile{
+    width: 300px;
+    height: 600px;
+}
+.login-page .mobile img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.login{
+  margin-bottom:350px;
+  text-align: center;
+}
+.login h1{
+    font-size: 3rem;
+    font-weight: 500;
+    color: #333;
+}
+.login p{
+    font-size: 1.3rem;
+    font-weight: 300;
+    color: #333;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.login .find{
+    margin-top: 50px;
+}
+.login h4{
+    margin-bottom: 40px;
+}
+.explore{
+    padding: 2rem 15rem;
+}
+.explore h1{
+    color: #555;
+    padding: 2rem 0rem;
+    font-weight: 500;
+    font-size: 2.5rem;
+}
+.b{
+    margin-top: 50px;
+}
+.b h3{
+    color: #555;
+    padding:1rem 0rem;
+    font-size: 2rem;
+    font-weight: 300;
+}
+.b p{
+    color: #888;
+    margin: 20px;
+    line-height: 1.5rem;
+}
+.top{
+    display: grid;
+    grid-template-rows:  repeat(2,1fr);
+    grid-template-columns: repeat(5,1fr);
+    grid-gap: 40px;
+}
+.client{
+    padding: 2rem 15rem;
+}
+.client h1{
+    color: #555;
+    padding: 2rem 0rem;
+    font-weight: 500;
+    font-size: 2.5rem;
+}
+.city{
+    display: grid;
+    grid-template-rows:  repeat(10,1fr);
+    grid-template-columns: repeat(5,1fr);
+    grid-gap: 40px; 
+    text-align: center;
+}
+.city .c h3{
+    color: #888;
+    transition: all 0.5s;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+.city .c h3:hover{
+    color: #222;
+}
+.footer{
+    background-color: rgb(247, 242, 242);
+    height: 300px;
+    width: 100%;
+}
+.footer .f-head{
+    padding: 2rem;
+    display: flex;
+    justify-content: space-around;
+}
+.footer .f-head .right{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(1,1fr);
+    
+}
+.footer .f-head .f-left h1{
+    letter-spacing: -2px;
+    font-style: oblique;
+}
+.f-main{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.link a{
+    display: block;
+    text-decoration: none;
+}
+.copy{
+    padding: 0.6rem 15rem;
+}
+.copy p{
+    color: rgb(143, 141, 141);
+    font-size: 0.9rem;
+}
+
+
+
+
+
+
+
